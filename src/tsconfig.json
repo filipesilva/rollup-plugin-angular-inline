@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "../dist",
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "lib": [
+      "es2015"
+    ]
+  }
+}

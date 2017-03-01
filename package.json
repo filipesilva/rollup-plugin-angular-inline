@@ -1,0 +1,50 @@
+{
+  "name": "rollup-plugin-angular-inline",
+  "version": "1.0.0",
+  "description": "Angular templateUrl and styleUrls inline for Rollup.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm test",
+    "pretest": "npm run build && rollup -c test/rollup-config.js",
+    "test": "mocha test/test.ts --compilers ts:ts-node/register",
+    "prebuild": "npm run clean",
+    "build": "tsc -p src/ && rollup -c rollup-config.js",
+    "clean": "rimraf dist/ test/dist/",
+    "lint": "tslint ./src/**/*.ts ./test/**/*.ts -t verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipesilva/rollup-plugin-angular-inline.git"
+  },
+  "keywords": [
+    "Rollup",
+    "Angular",
+    "Inline",
+    "template",
+    "templateUrl",
+    "styles",
+    "styleUrls"
+  ],
+  "author": "Filipe Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filipesilva/rollup-plugin-angular-inline/issues"
+  },
+  "homepage": "https://github.com/filipesilva/rollup-plugin-angular-inline#readme",
+  "devDependencies": {
+    "@types/mocha": "^2.2.39",
+    "@types/node": "^7.0.5",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.41.4",
+    "ts-node": "^2.1.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "magic-string": "^0.19.0",
+    "rollup-pluginutils": "^2.0.1"
+  }
+}

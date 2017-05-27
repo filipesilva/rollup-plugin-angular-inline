@@ -1,3 +1,10 @@
+# Warning
+This approach will likely produce innaccurate sourcemaps. 
+
+A better approach is to inline templates/styles directly in the TypeScript sources, which guarantees sourcemaps will be correctly produced by TypeScript.
+
+Such a build step can be found at https://github.com/filipesilva/angular-quickstart-lib.
+
 # rollup-plugin-angular-inline
 [![Build Status][travis-badge]][travis-badge-url]
 

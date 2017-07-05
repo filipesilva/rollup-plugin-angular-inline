@@ -22,4 +22,8 @@ describe('Angular Inline', () => {
     assert(lib.match('another-lib.not-component.css'));
   });
 
+  it('should replace templateUrl when using doublequotes', () => {
+    assert(lib.match('lib-component-double-quotes-html'));
+  });
+
 });

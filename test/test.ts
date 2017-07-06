@@ -1,3 +1,6 @@
+/// <reference path="../node_modules/@types/mocha/index.d.ts" />
+/// <reference path="../node_modules/@types/node/index.d.ts" />
+
 import * as fs from 'fs';
 import * as path from 'path';
 import * as assert from 'assert';

@@ -31,5 +31,5 @@ describe('Angular Inline', () => {
 
   it('should replace templateUrl when using backticks', () => {
     assert(lib.match('<p>lib-component-back-ticks-html</p>'));
-  })
+  });
 });

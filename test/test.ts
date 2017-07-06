@@ -29,4 +29,7 @@ describe('Angular Inline', () => {
     assert(lib.match('lib-component-double-quotes-html'));
   });
 
+  it('should replace templateUrl when using backticks', () => {
+    assert(lib.match('<p>lib-component-back-ticks-html</p>'));
+  })
 });
